@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opml version="2.0">
+  <head>
+    <title></title>
+    <flavor>dynalist</flavor>
+    <source>https://dynalist.io</source>
+    <ownerName>김민철</ownerName>
+    <ownerEmail>arescat@gmail.com</ownerEmail>
+  </head>
+  <body>
+    <outline text="Report">
+      <outline text="개요">
+        <outline text="주제">
+          <outline text="국민건강영양조사 데이터를 기반으로 성인의 고혈압 발병요인을 찾고, 고혈압나이를 예측할 수 있는 어플리케이션 알고리즘 설계"/>
+        </outline>
+        <outline text="주세선정사유">
+          <outline text="(말 만들기 필요, 또는 아래 정남식 교수 내용 인용)"/>
+        </outline>
+        <outline text="관련정보">
+          <outline text="고혈압이란?">
+            <outline text="정의(HE_HP)">
+              <outline text="3. 고혈압: 수축기혈압이 140mmHg 이상 또는 이완기혈압이 90mmHg 이상 또는 고혈압 약물을 복용한 사람"/>
+              <outline text="2. 고혈압 전단계: 3이 아니고, 수축기혈압이 120mmHg 이상, 140mmHg 미만이고, 이완기혈압이 80mmHg 이상, 90mmHg 미만인 사람"/>
+              <outline text="1. 정상: 2,3이 아니고, 수축기혈압이 120mmHg 미만이고, 이완기혈압 이 80mmHg 미만인 사람"/>
+              <outline text="「2016 국민건강통계」에서는 만30세 이상에 대해 산출"/>
+            </outline>
+            <outline text="통계">
+              <outline text="국민건강영양조사">
+                <outline text="연령대별 : 나이가 높아지면 혈압이 높아짐"/>
+                <outline text="남/녀 : 여성은 폐경 이후 혈압이 높아짐"/>
+                <outline text="http://kosis.kr/statHtml/statHtml.do?orgId=117&amp;tblId=DT_11702_N105&amp;vw_cd=MT_ZTITLE&amp;list_id=117_11702_B01&amp;seqNo=&amp;lang_mode=ko&amp;language=kor&amp;obj_var_id=&amp;itm_id=&amp;conn_path=MT_ZTITLE"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="고혈압과 생활습관 조절의 중요성(국민고혈압사업단, 정남식 교수)">
+            <outline text="고혈압은 증상이 없는 경우가 대부분"/>
+            <outline text="혈압이 높은데 잘 모르고 있거나, 고혈압을 진단 받았는데도 관리의 중요성을 간과"/>
+          </outline>
+        </outline>
+      </outline>
+      <outline text="데이터 이해(이하 자료 주요 내용만 요약)">
+        <outline text="데이터 개요 : 국민건강영양조사 제7기 1차년도(2016년)">
+          <outline text="국민건장증진법 제16조에 근거하여 시행하는 국민의 건강행태, 만성질환 유병현황, 식품 및 영양섭취실태에 관한 법정조사, 통계법 제 17조에 근거한 정부지정통계(승인번호 제117002호)"/>
+          <outline text="조사목적">
+            <outline text="국민건강영양조사는 1995년 제정된 국민건강증진법 제16조에 근거하여 시행하는 전국 규 모의 건강 및 영양조사이다. 1998년부터 2005년까지 3년 주기로 시행하였으며, 국가통계의 시 의성 향상을 위해 2007년부터 매년 시행하고 있다. 본 조사의 목적은 국민의 건강수준, 건강 행태, 식품 및 영양섭취 실태에 대한 국가 및 시도 단위의 대표성과 신뢰성을 갖춘 통계를 산 출하고, 이를 통해 국민건강증진종합계획의 목표 설정 및 평가, 건강증진 프로그램 개발 등 보건정책의 기초자료로 활용하는 것이다."/>
+          </outline>
+          <outline text="조사대상">
+            <outline text="제7기 1차년도(2016) 조사구는 192개로 표본 조사구 내에서 양로원, 군대, 교도소 등의 시 설 및 외국인 가구 등을 제외한 적절가구 중 가구원수 감소 및 참여율 하락으로 약 1만명의 조사 대상자를 유지하기 위하여 기존 20개 표본가구에서 23개 표본가구로 상향조정하였으며 계통추출법을 이용하여 선정하였다. 표본가구 내에서는 적정가구원 요건을 만족하는 만1세 이상의 모든 가구원을 조사대상자로 선정하였다."/>
+          </outline>
+          <outline text="조사내용">
+            <outline text="구분 : 제7기(2016-2018)"/>
+            <outline text="조사방법 : 순환표본조사 조사기간 1-12월 (12개월)"/>
+            <outline text="표본크기">
+              <outline text="총 576조사구, 13,248가구 (연간 192조사구, 4,416가구)"/>
+            </outline>
+            <outline text="추출틀">
+              <outline text="인구주택총조사(2010), 공동주택공시가격(2011-14)"/>
+            </outline>
+            <outline text="추출단위 : 조사구→가구"/>
+            <outline text="층화변수 : 시도(세종시 추가), 동읍면, 주택유형(일반/아파트/신 축아파트), (내재적층: 성별, 연령, 주거면적 비율)"/>
+          </outline>
+        </outline>
+        <outline text="데이터 활용 사례">
+          <outline text="제 1기 조사(1998년) 이후 최근 제7기 조사(2016년) 자료를 통해 통해 2002년 이후 현재까지 약 900여개의 논문 및 학술지 연구보고가 있었음"/>
+          <outline text="https://knhanes.cdc.go.kr/knhanes/sub03/sub03_05.do"/>
+        </outline>
+      </outline>
+      <outline text=" 분석">
+        <outline text="데이터 확보">
+          <outline text="질변관리본부 국민건강영양조사 홈페이지에서 원시자료 다운로드">
+            <outline text="https://knhanes.cdc.go.kr/knhanes/sub03/sub03_02_02.do"/>
+            <outline text="HN16_ALL.sas7bdat : 기본DB(건강설문조사, 검진조사, 영양조사), SAS 파일"/>
+          </outline>
+        </outline>
+        <outline text="적용 도구">
+          <outline text="Python(numpy, pandas, scikit-learn, matplotlib, seaborn, etc)"/>
+          <outline text="H2O"/>
+          <outline text="decision tree 및 random forest(regression, classification)"/>
+        </outline>
+        <outline text="데이터 탐색(EDA)">
+          <outline text="데이터 탐색 및 전처리">
+            <outline text="1세 ~ 80세(80세 이상 탑코딩)까지 총 8,150명 건강설문조사, 검진조사, 영양조사 내용으로 구성"/>
+            <outline text="나이, 키, 몸무게, 수축/이완기 혈압 등 numerical 자료,  성별(1. 남자, 2. 여자), 맥박규칙성 여부(1. 규칙적, 2. 불규칙적),  고혈압 유병여부(1. 정상, 2. 고혈압 위험단계, 3. 고혈압) 등 category자료가 혼합되어 구성됨"/>
+            <outline text="고혈압 유병여부는 만 19세부터 정의, 80세 이상은 탑코딩 되어 있어서 실제 나이를 알 수 없으므로 제외 : 만 19세 ~ 만 79세까지 데이터를 토대로 분석하기로 결론"/>
+            <outline text="matplotlib, seaborn을 이용해 pie plot, count plot 등을 확인해가며 일변량 분석"/>
+            <outline text="혈압은 총 3번에 걸쳐서 측정, 2, 3차 평균으로 각각 최종 수축기 혈압(HE_sbp), 최종 이완기 혈압(HE_dbp) 변수 생성하여 입력되어 있음"/>
+            <outline text="HE_sbp, HE_dbp를 토대로 고혈압 정의(HE_HP)"/>
+            <outline text="혈압을 치료하고 있는 사람(DI1_pt : 1.있음)사람은 인위적으로 혈압을 낮추었다고 보고 조사 대상에서 제외"/>
+            <outline text="HE_HP가 null값으로 되어 있는 사람은 classification 진행 시 제외"/>
+          </outline>
+          <outline text="변수 선정 과정">
+            <outline text="pandas scatter_matrix 등을 활용하여 최종 수축기/이완기 혈압(HE_sbp/HE_dbp)과 전체 변수들에 대한 상관관계 시각화 시도, pandas.corr() 활용하여 혈압과 상관관계에 있는 변수 탐색"/>
+            <outline text="1차 문제 발생">
+              <outline text="700여개의 변수 항목이 너무 많아 상관도가 높게 나왔다고 하더라도 의미있는 변수인지 아닌지 도메인 지식이 없는 상황에서 판단 불가"/>
+            </outline>
+            <outline text="scikit-learn의 decision tree regressor를 이용해 모든 변수에 대해 최종 수축기 혈압(HE_sbp), 최종 이완기 혈압(HE_dbp)을 잘 구분해주는 변수 찾기로 하고 파이썬 코딩하여 모든 변수에 대한 2depth까지의 decision tree 파일을 생성하고, 변수별 mse list를 만들어 최소값부터 오름차순으로 정렬 후 변수 하나씩 분석 시작"/>
+            <outline text="나이, 1,2,3차 혈압측정값 등 상관관계를 이미 알고 있는 변수들에 대한 mse가 낮게 측정됨을 확인"/>
+            <outline text="2차 문제 발생">
+              <outline text="수축기 혈압, 이완기 혈압에 상관관계가 있는 변수들이 각각 조금씩 차이가 있어서 공통적인 변수를 찾기가 어려움 "/>
+            </outline>
+            <outline text="이번에는 scikit-learn의 decision tree classfier를 이용해 수축기/이완기 혈압을 참고해 범주로 나눈 고혈압 정의(HE_HP) 변수에 대입하여 2depth까지의 decision tree 파일을 생성하고, 변수별 accuracy rate list를 만들어 최대값부터 내림사춘으로 정렬 후 변수 하나씩 분석 시작"/>
+            <outline text="3차 문제 발생">
+              <outline text="regression, classification을 통해 찾은 변수들을 multi variable로 넣어가며 다시 desision tree 진행하기로 하였으나,  많은 변수들에 대한 NaN값이 많아 진행이 어려움"/>
+            </outline>
+            <outline text="한편 H2O를 이용해 전체 변수에 대한 random forest 진행후 variable importance 체크"/>
+            <outline text="각 변수들을 11개의 군으로 묶어서 DT 진행, category형 변수는 one-hot encording하여 진행"/>
+            <outline text="상관도가 높더라도 제외할 변수 : 나이, 성별, 기타 혈압과 직접적인 관계가 있는 측정 변수들(맥박 불규칙성 등)"/>
+            <outline text="최종 변수 추출 리스트">
+              <outline text="DT regression : mse 낮은 순"/>
+              <outline text="DT classification : accuracy 높은 순"/>
+              <outline text="Random Forest : 중요변수 순"/>
+            </outline>
+          </outline>
+          <outline text="전문가 자문">
+            <outline text="수축기/이완기 혈압 상관 요인이 상이하여 고혈압 유병 여부 category를 통한 DT classification 분석을 진행하려 하였으나, 2개의 numerical 자료를 categorical 자료화 한 것이라 정확도가 낮아질 것이라 판단 &gt; 의학계에서는 평균동맥압을 좀더 정확한 고혈압 측정 자료로 활용하고 있다고 확인됨"/>
+            <outline text="혈압은 10세에 10씩 높아짐 &gt; 이를 통해 혈압나이 알고리즘 개발 아이디어 획득"/>
+          </outline>
+          <outline text="데이터 분석 결론">
+            <outline text="최종적으로 선정된 변수를 전체 넣고 DT 및 random forest 진행"/>
+            <outline text="변수 중요도순으로 소팅, 상관도 지수화"/>
+            <outline text="결론">
+              <outline text="생활습관에 관련된 변수들이 역시나 고혈압 발병에 많은 상관이 있다. &gt; 습관의 중요성"/>
+            </outline>
+          </outline>
+          <outline text="응용">
+            <outline text="혈압나이 예측 알고리즘">
+              <outline text="최종 추출 변수들 상관도 지수를 기반하여 설문을 통해 혈압나이를 보여주고(재미요소)"/>
+              <outline text="평균 대비 나이가 낮은 요인은 장려, 높이는 요인은 줄이도록 하는 어플리케이션 개발 가능 "/>
+            </outline>
+          </outline>
+        </outline>
+      </outline>
+      <outline text="프로젝트 의의">
+        <outline text="의의">
+          <outline text="구성원이 도메인 지식이 없는 분야(건강 및 의료 부문 분석)의 분석을 통해 데이터 분석을 접근함"/>
+          <outline text="Volume 보다는 Variety Data(700여개 Feature)를 가지고 분석을 하면서 데이터를 바라보는 insight 생김"/>
+          <outline text="(1가지 더 생각) - 공공성, 고혈압은 평소에 아무런 증상도 느끼지 않다가 갑자기 사망하거나 심한 후유증으로 폐인이 되는 경우가 많아 Silent killer(무언의 살인자)로 불리기도 하며, 주요 심장병, 뇌졸중, 당뇨병, 동맥경화증, 고지혈증, 등 합병증을 유발하기도 함. "/>
+        </outline>
+      </outline>
+      <outline text="별첨자료">
+        <outline text="분석참고자료 목록">
+          <outline text="&quot;국민건강영양조사 원시자료 이용지침서, 제7기 1차년도(2016), 질병관리본부 - 데이터 이해"/>
+          <outline text="&quot;국민건강영양조사 제7기 1차년도(2016) 혈압측정 질관리&quot; 정책연구용역사업 최종결과보고서, 질병관리본부 - 혈압측정데이터 신빙성"/>
+        </outline>
+      </outline>
+    </outline>
+  </body>
+</opml>
